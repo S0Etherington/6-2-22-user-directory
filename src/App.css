@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: rgb(35, 35, 35);
+  height: 100vh;
 }
 
 .App-logo {
@@ -14,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(35, 35, 35);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +37,108 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  background-color: rgb(87, 163, 213);
+  margin-top: 0px;
+  margin-bottom: 100px;
+  height: 15vh;
+  text-align: left;
+  display: flex;
+}
+
+#headerText {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 4vw;
+  display: flex;
+  font-size: 25px;
+}
+
+#card {
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 65vw;
+  height: 45vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer{
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#userContent {
+  margin-left: 5vw;
+  text-align: left;
+  font-size: 20px;
+  width: 32vw;
+}
+
+#pageNum {
+  margin-right: 1vw;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: right;
+}
+
+#name {
+  font-weight: bold;
+  margin-bottom: 0px;
+  font-size: 35px;
+}
+
+#nameBar {
+  background-color: rgb(87, 163, 213);
+  height: 0.25vw;
+  width: 12vw;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.subInfo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#movieListHolder {
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+}
+
+#favMovies {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.cardButton {
+  background-color:rgb(87, 163, 213);
+  color: white;
+  border-radius: 19px;
+  border-color: transparent;
+  box-shadow: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navButton {
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  height: 5vh;
+  margin-top: 10px;
 }
