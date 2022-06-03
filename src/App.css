@@ -133,6 +133,11 @@
   font-size: 20px;
 }
 
+.cardButton:hover {
+  cursor: pointer;
+  color: rgb(187, 187, 187);
+}
+
 .navButton {
   background-color: transparent;
   border-color: transparent;
@@ -141,4 +146,9 @@
   color: white;
   height: 5vh;
   margin-top: 10px;
+}
+
+.navButton:hover {
+    color: rgb(187, 187, 187);
+    cursor: pointer;
 }

@@ -1,8 +1,10 @@
 import React from 'react'
+import data from '../data'
 
-const Page = () => {
+const Page = (props) => {
+    const {selectedIndex, setSelectedIndex} = props
   return (
-    <div>/25</div>
+    <div>{data[selectedIndex].id}/25</div>
   )
 }
 
