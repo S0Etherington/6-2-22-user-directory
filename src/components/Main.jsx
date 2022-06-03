@@ -1,28 +1,10 @@
 import React, {useState} from 'react'
 import data from '../data'
 import Page from './Page'
-// import Footer from './Footer'
+import Footer from './Footer'
 
 const Main = () => {
     const [selectedIndex, setSelectedIndex] = useState(0)
-
-    const previous = () => {
-        if(selectedIndex === 0){
-            setSelectedIndex(24)
-        }
-        else {
-            setSelectedIndex(selectedIndex - 1)
-        }
-    }
-
-    const next = () => {
-        if(selectedIndex === 24){
-            setSelectedIndex(0)
-        }
-        else {
-            setSelectedIndex(selectedIndex + 1)
-        }
-    }
 
   return (
     <div>
@@ -49,16 +31,7 @@ const Main = () => {
             <Page setSelectedIndex={setSelectedIndex} selectedIndex={selectedIndex}/>
             </div>
         </div>
-        {/* <Footer /> */}
-        <div id='footer'>
-            <button className='navButton' onClick={() => previous()}>Previous</button>
-            <div>
-                <button className='cardButton'>Edit</button>
-                <button className='cardButton'>Delete</button>
-                <button className='cardButton'>New</button>
-            </div>
-            <button className='navButton' onClick={() => next()}>Next</button>
-        </div>
+        <Footer setSelectedIndex={setSelectedIndex} selectedIndex={selectedIndex}/>
     </div>
   )
 }
